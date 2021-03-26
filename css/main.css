@@ -418,10 +418,10 @@ border-radius: 50%;
 	right: 0;
 }
 .slider-billbord .slick-prev {
-	left: 8px;
+	left: 4px;
 }
 .slider-billbord .slick-next {
-	right: 8px;
+	right: 4px;
 }
 .btn-main {
 	font-size: 14px;
@@ -1267,9 +1267,7 @@ justify-content: center;
 	display: none;
 }
 .slider-billbord .slick-arrow {
-	transform: none;
-}
-.slider-billbord .slick-arrow:hover {
-	transform: scale(1.2);
-	background-color: #fff;
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
 }

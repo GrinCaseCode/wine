@@ -535,6 +535,9 @@
 	.tabs__circle {
 		display: none;
 	}
+	.slider-billbord .slick-arrow {
+		top: 47%;
+	}
 }
 
 
