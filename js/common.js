@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
 //прилипающие меню
 var $menu = $(".header");
 $(window).scroll(function(){
@@ -120,9 +119,9 @@ $(".footer__title").click(function() {
 		]
 	});
 
-	$('.tabs li a').click(function(event) {
+	$('.tabs a').click(function(event) {
 		event.preventDefault();
-		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().parent().find(".tabs__item").removeClass('active');
 		$(this).parent().addClass('active');
 		$(this).parent().parent().siblings(".tab-container").find(".tab-pane").removeClass("active");
 		var selectTab = $(this).attr("href");

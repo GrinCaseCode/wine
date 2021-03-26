@@ -107,6 +107,10 @@ border-radius: 6px;
 	align-items: flex-end;
 	z-index: 20;
 	cursor: pointer;
+	transition: all 0.3s;
+}
+.sandwich:hover {
+	background-color: #e7e5e2;
 }
 .sw-topper {
 	position: relative;
@@ -437,7 +441,7 @@ transition: all 0.3s;
 text-align: center;
 }
 .btn-main:hover {
-	background-color: #510303;
+	background-color: #2d1c0c;
 }
 .slider-billbord  .btn-main {
 	margin-top: 25px;
@@ -482,12 +486,14 @@ text-align: center;
 transition: all 0.3s;
 	font-family: 'GothamPro';
 }
+.btn-block:hover {
+	background-color: #fff;
+	    color: #2d1c0c;
+}
 .banner .btn-block {
 	margin-top: auto;
 }
-.btn-block:hover {
-border: 1px solid rgba(249,247,244,0.7);
-}
+
 .tabs {
 	font-size: 18px;
 line-height: 1.2;
@@ -497,34 +503,44 @@ line-height: 1.2;
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: 1px solid #ccc;
+	position: relative;
 }
-.tabs li a {
+.tabs a {
 	display: inline-block;
 	transition: all 0.3s;
 	position: relative;
 color: #000;
 padding-bottom: 25px;
 }
-.tabs li a::before {
+.tabs__circle {
 	position: absolute;
 	display: block;
-	content: " ";
 	width: 12px;
 height: 12px;
 background-color: #7b1212;
 border-radius: 50%;
 bottom: -6px;
-left: 0;
-right: 0;
-margin: 0 auto;
-opacity: 0;
-transition: all 0.3s;
+left: 60px;
+opacity: 1;
+transition: all 0.5s;
 }
-.tabs li a:hover,
-.tabs li.active a {
+.tabs .tabs__item:nth-child(2).active ~ .tabs__circle {
+    left: 235px;
+}
+.tabs .tabs__item:nth-child(3).active ~ .tabs__circle {
+    left: 430px;
+}
+.tabs .tabs__item:nth-child(4).active ~ .tabs__circle {
+    left: 631px;
+}
+.tabs .tabs__item:nth-child(5).active ~ .tabs__circle {
+    left: 806px;
+}
+.tabs .tabs__item a:hover,
+.tabs .active a {
 	color: #7b1212;
 }
-.tabs li.active a::before {
+.tabs .active a::before {
 	opacity: 1;
 }
 .products {
@@ -547,6 +563,7 @@ border-bottom: 1px solid #7b1212;
 transition: all 0.3s;
 }
 .link-main:hover {
+	color: #2d1c0c;
 	border-color:transparent;
 }
 .item-product {
@@ -1168,6 +1185,7 @@ color: #2d1c0c;
 	position: fixed;
 	top: 170px;
 	right: 20px;
+	z-index: 100;
 }
 .fixed-links li {
 	margin-bottom: 10px;
@@ -1247,4 +1265,11 @@ justify-content: center;
 }
 .menu-mobile {
 	display: none;
+}
+.slider-billbord .slick-arrow {
+	transform: none;
+}
+.slider-billbord .slick-arrow:hover {
+	transform: scale(1.2);
+	background-color: #fff;
 }
