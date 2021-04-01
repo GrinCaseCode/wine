@@ -42,14 +42,34 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(".sandwich").removeClass("active");
 	});
 
-		/*высота блока по экрану*/
-	function heightDetect() {
-		$('.menu-mobile').css("height", $(window).height() -$(".header").height() + 60);
-	};
-	heightDetect();
-	$(window).resize(function() {
-		heightDetect();
+	$(".btn_nav_catalog").click(function() {
+		if ($(".menu-catalog").is(":hidden")) {
+			$(".menu-catalog").slideDown(200);
+		} else {
+			$(".menu-catalog").slideUp(200);
+		}
+		
 	});
+
+	$(".menu-catalog a").click(function() {
+		$(".menu-catalog").slideUp(200);
+		$(".sandwich").removeClass("active");
+	});
+
+		$(".btn-catalog-mobile, .btn-catalog-bottom").click(function() {
+		if ($(".menu-catalog").is(":hidden")) {
+			$(".menu-catalog").slideDown(200);
+		} else {
+			$(".menu-catalog").slideUp(200);
+		}
+		
+	});
+
+		$(".menu-catalog__close").click(function() {
+		$(".menu-catalog").slideUp(200);
+	});
+
+
 
 	$(".location-value").click(function() {
 		$(".location-block__list").slideToggle(200);
