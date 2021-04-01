@@ -12,7 +12,7 @@
 	.location-block {
 		display: none;
 	}
-	.menu li a {
+	.menu > li > a {
 		font-size: 11px;
 	}
 	.slider-billbord .circle-sale {
@@ -58,7 +58,6 @@
 	.form-search {
 		display: none;
 	}
-	.header__bottom,
 	.contacts-item {
 		display: none;
 	}
@@ -123,6 +122,9 @@
 		padding: 10px 0;
 	}
 	.header {
+		position: relative;
+	}
+	.headerr {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -130,8 +132,76 @@
 		z-index: 1000;
 		background-color: #fff;
 	}
+	.menu {
+		display: block;
+	}
+	.menu > li > a {
+		padding: 11px 0;
+		text-align: left;
+	}
 	.wrapper {
-		padding-top: 76px;
+		padding-top: 0 !important;
+	}
+	.btn-catalog-mobile {
+		padding: 15px 15px;
+		margin: 0 -15px;
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+		color: #fff;
+		background-color: #9d4a4a;
+	}
+	.btn-catalog-bottom {
+		text-align: center;
+	}
+	.btn-catalog-bottom {
+		padding: 10px 0;
+		margin-top: 15px;
+		border-top: 1px solid rgba(255, 255, 255, 0.5);
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.btn-catalog-mobile i {
+		font-size: 16px;
+		margin-right: 15px;
+	}
+	.header__bottom {
+		margin-top: 15px;
+		padding-bottom: 5px;
+	}
+	.menu-catalog {
+		padding: 10px 0;
+		padding-top: 50px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		border-radius: 0;
+	}
+	.menu-catalog__close {
+		display: block;
+		padding: 13px 15px;
+		background-color: #7b1212;
+		color: #fff;
+		position: fixed;
+		top: 0;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		z-index: 4;
+	}
+	.menu-dropdown {
+		display: none;
+	}
+	.menu-catalog__wrap {
+		display: block;
+	}
+	.menu-catalog__col {
+		width: 100% !important;
 	}
 	.fixed-links {
 		display: none;
@@ -144,22 +214,24 @@
 	}
 	.menu-mobile {
 		padding: 20px 15px;
-		padding-bottom: 100px;
+		padding-bottom: 40px;
 		position: absolute;
-		top: 100%;
+		top: 60px;
 		left: 0;
 		width: 100%;
 		background-color: #fff;
 		overflow: auto;
+		z-index: 200;
+		box-shadow: 0 3px 7px rgba(157, 157, 157, 0.35);
 	}
-	.menu li a::after,
-	.menu li a::before {
+	.menu > li > a::after,
+	.menu > li > a::before {
 		display: none;
 	}
 	.menu-mobile .menu  {
 		display: block;
 	}
-	.menu-mobile .menu li a {
+	.menu-mobile .menu > li > a {
 		padding: 10px 0;
 		font-size: 14px;
 		text-align: left;
@@ -184,9 +256,56 @@
 		margin-bottom: 15px;
 		display: flex;
 	}
+	.btn-basket-mobile {
+		width: 54px;
+		height: 45px;
+		font-size: 20px;
+		align-items: center;
+		justify-content: center;
+		margin-left: auto;
+		background-color: #f9f7f4;
+		border-radius: 6px;
+		display: inline-flex;
+		color: #7b1212;
+		position: relative;
+	}
+	.btn-basket-mobile .fixed-links__value {
+		color: #fff;
+		top: 4px;
+	}
 	.menu-mobile .fixed-links li {
 		margin-right: 25px;
 		margin-bottom: 0;
+	}
+	.btn_nav_menu {
+		order: 2;
+		margin-left: 15px;
+	}
+	.btn-basket-mobile {
+		margin-left: 15px;
+	}
+	.logo {
+		margin: 0 !important;
+		order: -1;
+	}
+	.btn_nav {
+		margin-right: 0 !important;
+	}
+	.menu-mobile .footer__list {
+		margin-bottom: 15px;
+	}
+	.menu-mobile .footer__list li {
+		margin: 0;
+	}
+	.menu-mobile .footer__list li a {
+		padding: 10px 0;
+		color: #000;
+		font-size: 14px;
+		border-bottom: 1px solid #000;
+		display: block;
+	}
+	.desc-logo {
+		display: none;
 	}
 	.menu-mobile .contacts-item {
 		margin-top: 15px;
@@ -213,6 +332,12 @@
 	}
 	.tabs .tabs__item:nth-child(5).active ~ .tabs__circle {
 		left: 640px;
+	}
+	.form-search_mobile {
+		margin: 0 15px;
+		width: inherit;
+		margin-top: 25px;
+		display: block;
 	}
 
 }
@@ -381,9 +506,18 @@
 	.tabs .tabs__item:nth-child(4).active ~ .tabs__circle {
 		left: 69%;
 	}
-.tabs .tabs__item:nth-child(5).active ~ .tabs__circle {
-    left: 89%;
-}
+	.tabs .tabs__item:nth-child(5).active ~ .tabs__circle {
+		left: 89%;
+	}
+	.banner  {
+		display: none;
+	}
+	.col_mobile {
+		display: block;
+	}
+	.col_hidden_mobile {
+		display: none;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -538,6 +672,30 @@
 	.slider-billbord .slick-arrow {
 		top: 47%;
 	}
+	.row_showcase .row {
+		margin: 0 -5px;
+	}
+	.row_showcase .row > div {
+		padding: 0 5px;
+		margin-bottom: 10px;
+	}
+	.item-showcase {
+		font-size: 12px;
+	}
+	.row_showcase .row .item-showcase__title {
+    font-size: 14px;
+}
+.row_showcase .row .item-showcase {
+    padding-left: 8px;
+    min-height: 100%;
+}
+.row_showcase .row .item-showcase li {
+    margin-bottom: 5px;
+}
+.btn-basket-mobile,
+.btn_nav_menu {
+	margin-left: 9px;
+}
 }
 
 
