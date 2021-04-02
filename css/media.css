@@ -6,6 +6,9 @@
 	.slider-billbord .circle-sale {
 		right: 150px;
 	}
+	.sidebar-catalog {
+		width: 300px;
+	}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -50,7 +53,12 @@
 	.item-news__name {
 		font-size: 22px;
 	}
-
+.sidebar-catalog {
+    width: 250px;
+}
+.row_catalog .item-product .btn-main {
+	padding: 0 26px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -336,10 +344,43 @@
 	.form-search_mobile {
 		margin: 0 15px;
 		width: inherit;
-		margin-top: 25px;
+		margin-top: 20px;
 		display: block;
 	}
-
+	.sidebar-catalog {
+		width: 100%;
+		display: none;
+	}
+	.col_catalog {
+		padding-left: 15px;
+	}
+.sidebar-open {
+	padding: 15px 20px;
+	font-size: 18px;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	justify-content: space-between;
+	color: #000;
+	    background-color: #f9f7f4;
+}
+.catalog .title-section {
+	padding-top: 15px;
+}
+.sidebar-catalog__title { 
+	display: none;
+}
+.header_page .btn-catalog-bottom,
+.header_page .header__bottom .menu {
+	display: none;
+}
+.header_page .header__bottom {
+	padding-bottom: 0;
+}
+.header_page .form-search_mobile {
+	display: none;
+}
 }
 
 /* Small Devices, Tablets */
@@ -518,6 +559,12 @@
 	.col_hidden_mobile {
 		display: none;
 	}
+	.filter-category {
+		margin-right: 18px;
+	}
+	.row_catalog .item-product:not(:hover) {
+	border-left: 1px #f2efe9 solid;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -696,6 +743,36 @@
 .btn_nav_menu {
 	margin-left: 9px;
 }
+.item-tag {
+    padding: 6px 8px;
+    margin-right: 4px;
+    }
+    .top-filter {
+    	display: block;
+    }
+    .top-filter__right {
+    	padding-top: 15px;
+    	justify-content: flex-start;
+    }
+   .row_catalog > div {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.pager {
+	padding-top: 30px;
+}
+.catalog {
+	padding-bottom: 30px;
+}
+.breadcumbs {
+	padding-top: 20px;
+}
+.sidebar-open {
+	font-size: 16px;
+}
 }
 
 
@@ -728,6 +805,9 @@
 @media only screen and (min-width : 992px) {
 	.menu-mobile {
 		display: none !important;
+	}
+	.sidebar-catalog {
+		display: block !important;
 	}
 }
 

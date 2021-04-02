@@ -80,6 +80,108 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	});
 
 
+	$(".item-filter__head").click(function() {
+		$(this).parent().parent().toggleClass("active");
+		$(this).siblings(".item-filter__content").slideToggle(200);
+	});
+
+	$(".sidebar-open").click(function() {
+		$(".sidebar-catalog").slideToggle(200);
+	});
+
+
+	/*range slider*/
+
+	$(function() {
+var $range = $(".range-catalog_price .range-catalog__input"),
+$from = $(".range-catalog_price .control-input__from"),
+$to = $(".range-catalog_price .control-input__to"),
+min = 0,
+max = 25000;
+$range.ionRangeSlider({
+	type: "double",
+	min: min,
+	max: max,
+	from: 5000,
+	to: 14000,
+	prettify_enabled: true,
+	onChange: function(data) {
+		updateValues()
+	}
+});
+
+
+$range = $range.data("ionRangeSlider");
+var updateValues = function() {
+	var res = $range.result;
+	$from.val(res.from, true);
+	$to.val(res.to,true)
+};
+$from.on("focus", function() {
+	this.value = this.value;
+	this.focus();
+	this.selectionStart = this.value.length
+}).on("input", function() {
+	$range.update({
+		from: this.value
+	})
+}).on("blur", updateValues);
+$to.on("focus", function() {
+	this.value = this.value;
+	this.focus();
+	this.selectionStart = this.value.length
+}).on("input", function() {
+	$range.update({
+		to: this.value
+	})
+}).on("blur", updateValues)
+});
+
+		$(function() {
+var $range = $(".range-catalog_strength .range-catalog__input"),
+$from = $(".range-catalog_strength .control-input__from"),
+$to = $(".range-catalog_strength .control-input__to"),
+min = 0,
+max = 21;
+$range.ionRangeSlider({
+	type: "double",
+	min: min,
+	max: max,
+	from: 0,
+	to: 21,
+	prettify_enabled: true,
+	onChange: function(data) {
+		updateValues()
+	}
+});
+
+
+$range = $range.data("ionRangeSlider");
+var updateValues = function() {
+	var res = $range.result;
+	$from.val(res.from, true);
+	$to.val(res.to,true)
+};
+$from.on("focus", function() {
+	this.value = this.value;
+	this.focus();
+	this.selectionStart = this.value.length
+}).on("input", function() {
+	$range.update({
+		from: this.value
+	})
+}).on("blur", updateValues);
+$to.on("focus", function() {
+	this.value = this.value;
+	this.focus();
+	this.selectionStart = this.value.length
+}).on("input", function() {
+	$range.update({
+		to: this.value
+	})
+}).on("blur", updateValues)
+
+});
 $(".footer__title").click(function() {
 		$(this).toggleClass("active");
 		$(this).siblings(".footer__content").slideToggle(200);
