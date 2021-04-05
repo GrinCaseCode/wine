@@ -1891,7 +1891,7 @@ border-radius: 6px;
 font-size: 12px;
 line-height: 21px;
 padding-top: 5px;
-color: #666666;	
+color: #666666;	 
 }
 .availability-unit__status {
 	color: #60a930;
@@ -1906,7 +1906,7 @@ color: #666666;
 .availability-unit > i {
 	top: 12px;
 	left: 8px;
-	font-size: 13px;
+	font-size: 13px; 
 color: #60a930;
 position: absolute;
 }
