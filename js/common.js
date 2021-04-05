@@ -298,10 +298,12 @@ $(".footer__title").click(function() {
 		if ($(this).siblings(".availability-unit__content").is(":hidden")) {
 			$(this).parent().addClass("active");
 			$(this).siblings(".availability-unit__content").slideDown(200);
+			$(this).siblings(".availability-unit__statuswrap").slideUp(200);
 
 		} else {
 			$(this).parent().removeClass("active");
 			$(this).siblings(".availability-unit__content").slideUp(200);
+			$(this).siblings(".availability-unit__statuswrap").slideDown(200);
 
 		}
 	});
