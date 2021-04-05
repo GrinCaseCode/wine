@@ -17,6 +17,38 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$menu.removeClass("fixed").addClass("default");
 }
 
+jQuery('.quantity').each(function() {
+		var spinner = jQuery(this),
+		input = spinner.find('input[type="number"]'),
+		btnUp = spinner.find('.quantity-up'),
+		btnDown = spinner.find('.quantity-down'),
+		min = input.attr('min'),
+		max = input.attr('max');
+
+		btnUp.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue >= max) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue + 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+
+		btnDown.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue <= min) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue - 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+
+	});
+
 	//плавный скролл
 	$(".navigat li a").mPageScroll2id();
 
@@ -248,6 +280,30 @@ $(".footer__title").click(function() {
 		$(this).parent().parent().siblings(".tab-container").find(".tab-pane").removeClass("active");
 		var selectTab = $(this).attr("href");
 		$(selectTab).addClass("active");
+	});
+
+	$('.tabs-card a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(this).parent().parent().siblings(".tab-container-card").find(".tab-pane-card").fadeOut(0);
+		var selectTab = $(this).attr("href");
+		$(selectTab).fadeIn(200);
+	});
+
+	$(".availability-unit__head").click(function(e) {
+		e.preventDefault();
+		$(".availability-unit").removeClass("active");
+		$(".availability-unit__content").slideUp(200);
+		if ($(this).siblings(".availability-unit__content").is(":hidden")) {
+			$(this).parent().addClass("active");
+			$(this).siblings(".availability-unit__content").slideDown(200);
+
+		} else {
+			$(this).parent().removeClass("active");
+			$(this).siblings(".availability-unit__content").slideUp(200);
+
+		}
 	});
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
