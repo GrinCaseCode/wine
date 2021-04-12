@@ -448,6 +448,20 @@
     	height: 300px;
     	margin-bottom: 25px;
     }
+    .article__sidebar {
+    	padding-left: 15px;
+    }
+    .wrap-sidebar-news {
+    	display: flex;
+    	flex-wrap: wrap;
+    	justify-content: space-between;
+    }
+    .article__sidebar .title-page {
+    	padding-top: 25px;
+    }
+    .article {
+    	padding-bottom: 30px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -681,6 +695,32 @@
 .item-gallery {
 	height: 170px;
 }
+.title-page {
+    font-size: 25px;
+    }
+    .article .title-page {
+    padding: 15px 0;
+}
+.article__image {
+	margin: 10px 0;
+}
+.title-middle {
+    font-size: 21px;
+    }
+    .article br {
+    	display: none;
+    }
+    .wrap-sidebar-news {
+    	display: block;
+    }
+    .article__sidebar .item-news {
+    	margin: 0 auto;
+    	margin-bottom: 30px;
+    }
+    .article__sidebar .title-page {
+    	text-align: center;
+    	padding-top: 25px;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -985,6 +1025,27 @@
     height: 130px;
     margin-bottom: 10px;
 }
+.article {
+	font-size: 14px;
+}
+.article li, .article p {
+    margin-bottom: 15px;
+}
+.blockquote {
+	margin-bottom: 20px;
+}
+.blockquote p {
+	margin: 0;
+}
+.title-page {
+    font-size: 22px;
+}
+.title-middle {
+    font-size: 18px;
+}
+.article {
+	padding-bottom: 20px;
+}
 }
 
 
@@ -1036,4 +1097,4 @@
 	.container {
 		max-width: 1330px;
 	}
-}
+} 

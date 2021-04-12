@@ -2171,3 +2171,57 @@ transition: all 0.3s;
 	line-height: initial;
 	color: #270601;
 }
+.article__image img {
+	max-width: 100%;
+}
+.article {
+		padding-top: 40px;
+		padding-bottom: 75px;
+		line-height: 22px;
+	background-color: #f9f7f4;
+}
+.article li,
+.article p {
+	margin-bottom: 20px;
+}
+.article li::before {
+	content: "•";
+	margin-right: 6px;
+	color: #7b1212;
+}
+.title-page {
+	font-size: 30px;
+	line-height: initial;
+	font-family: 'NewBaskervilleC';
+	font-weight: 700;
+	color: #270601;
+}
+.article .title-page {
+	padding: 22px 0;
+}
+.blockquote {
+	padding-left: 20px;
+	border-left: 4px solid #7b1212;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+.blockquote p {
+	margin: 0;
+}
+.blockquote_white {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #fff;
+}
+.article__sidebar {
+	padding-left: 55px;
+}
+.article__sidebar .title-page {
+	padding-top: 0;
+}
+.article__sidebar .item-news {
+	margin-bottom: 50px;
+}
+.breadcumbs_page {
+	margin: 0;
+} 
