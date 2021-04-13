@@ -804,6 +804,7 @@ p {
 .item-form {
 	margin-bottom: 15px;
 }
+.item-form textarea,
 .item-form input {
 	width: 100%;
 	height: 50px;
@@ -2225,3 +2226,59 @@ transition: all 0.3s;
 .breadcumbs_page {
 	margin: 0;
 } 
+.reviews {
+	padding-bottom:40px;
+		padding-top: 40px;
+	background-color: #f9f7f4;
+}
+.item-form textarea {
+	height: 110px;
+	padding-top: 15px;
+	resize: none;
+}
+.title-form {
+	font-size: 24px;
+	padding-bottom: 20px;
+	font-weight: 500;
+	text-align: center;
+	color: #fff;
+}
+.reviews .form-block {
+	padding-top: 25px;
+}
+.item-review {
+	padding: 30px;
+	margin-bottom: 22px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+.item-review__date {
+	font-size: 13px;
+	color: #76513b;
+	margin-bottom: 16px;
+	text-transform: uppercase; 
+	opacity: 0.6;
+}
+.item-review__name {
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+.item-review__title {
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #270601;
+	font-family: 'NewBaskervilleC';
+	font-weight: 700;
+}
+.item-review p {
+	font-size: 14px;
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+.item-review p:last-child {
+	margin-bottom: 0;
+}
+.reviews .pager {
+	padding-top: 10px;
+	justify-content: center;
+}
