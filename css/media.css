@@ -12,6 +12,13 @@
 	.card__features {
 		padding-left: 15px;
 	}
+	/*about*/
+	.row_discount > div {
+		padding: 0 20px;
+	}
+	.row_discount {
+		margin: 0 -20px;
+		}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -89,6 +96,23 @@
 .store-block {
 	padding: 32px 15px;
 }
+/*about*/
+.about p {
+	font-size: 16px;
+}
+.row_about {
+	margin: 0 -15px;
+}
+.row_about > div {
+	padding: 0 15px;
+	margin-top: 30px;
+}
+.item-discount__value {
+    padding: 20px 24px;
+    right: -28px;
+    bottom: -30px;
+    font-size: 31px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -469,6 +493,50 @@
     	margin: 0 auto;
     	margin-top: 25px;
     }
+/*about*/
+    .about p {
+    	padding-top: 0;
+    }
+    .image-page,
+    .about__image {
+    	margin-top: 20px;
+    }
+    .about-block {
+    	padding: 30px 15px;
+    }
+    .about-block p{
+    font-size: 14px;
+    line-height: 21px;
+}
+.row_reservation > div {
+	margin-top: 100px;
+	padding: 0 15px;
+}
+.row_reservation {
+	margin: 0 -15px;
+}
+.item-reservation {
+	padding-left: 14px;
+	padding-right: 14px;
+}
+.item-reservation p {
+    font-size: 14px;
+    line-height: 21px;
+    }
+    .item-reservation__number {
+    font-size: 118px;
+    line-height: 60px;
+}
+.reservation .title-section, .for-clients .title-section, .about .title-section {
+	text-align: left;
+}
+.row_discount {
+	justify-content: center;
+}
+.item-discount {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -735,6 +803,48 @@
     .item-review p {
     	margin-bottom: 15px;
     }
+
+    /*about*/
+    .about-block p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.row_about > div {
+	margin-top: 20px;
+}
+.about {
+	padding-bottom: 40px;
+}
+.for-clients p {
+	font-size: 16px;
+}
+.row_unit-text > div {
+    margin-top: 25px;
+}
+.reservation p {
+	font-size: 16px;
+	padding-top: 0;
+}
+.item-reservation p {
+	line-height: 24px;
+}
+.reservation {
+	padding-bottom: 50px;
+}
+.discount p {
+	font-size: 16px;
+}
+.item-discount {
+	margin-left: auto;
+	margin-right: auto;
+}
+.descr-discount p {
+	font-size: 14px;
+	line-height: 21px;
+}
+.discount {
+	padding-bottom: 40px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -1086,6 +1196,51 @@
 }
 .pager_new .page-numbers.prev {
 	margin-left: 0;
+}
+.about {
+	padding-top: 25px;
+}
+.about p {
+    font-size: 14px;
+    line-height: 21px;
+}
+.for-clients p {
+	padding-top: 0;
+}
+.for-clients p {
+	font-size: 14px;
+	line-height: 21px;
+}
+.unit-text {
+	padding: 30px 0;
+	padding-right: 5px;
+}
+.for-clients {
+	padding-bottom: 50px;
+}
+.reservation p {
+	font-size: 14px;
+	line-height: 21px;
+}
+.item-reservation__number {
+    font-size: 86px;
+    line-height: 40px;
+}
+.row_reservation > div {
+    margin-top: 65px;
+}
+.discount .title-middle {
+	padding-top: 0;
+}
+.discount p {
+	font-size: 14px;
+	line-height: 21px;
+}
+.item-discount__value {
+	right: -15px; 
+} 
+.descr-discount {
+    padding-top: 15px;
 }
 }
 

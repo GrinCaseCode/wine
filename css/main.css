@@ -2282,3 +2282,177 @@ transition: all 0.3s;
 	padding-top: 10px;
 	justify-content: center;
 }
+
+/*about*/
+.discount,
+.reservation,
+.for-clients,
+.about {
+	padding-top: 30px;
+	padding-bottom: 70px;
+	background-color: #f9f7f4;
+}
+.image-page img,
+.about__image img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 12px;
+	margin: 0 auto;
+}
+.discount p,
+.reservation p,
+.for-clients p,
+.about p {
+	padding-top: 15px;
+	font-size: 18px;
+	line-height: 24px;
+}
+.about-block {
+	padding: 36px 30px;
+	min-height: 100%;
+	background-color: #c69e77;
+	color: #fff;
+	font-weight: 500;
+	text-align: center;
+}
+.about-block p {
+	padding-top: 0;
+	font-size: 16px;
+}
+.row_about {
+	margin: 0 -45px;
+}
+.row_about > div {
+	padding: 0 45px;
+	margin-top: 60px;
+}
+.discount .title-section,
+.reservation .title-section,
+.for-clients .title-section,
+.about .title-section {
+	padding-bottom: 20px;
+}
+.unit-text {
+	padding: 53px 0;
+	max-width: 470px;
+	background-color: #fff;
+	display: flex;
+	min-height: 100%;
+	align-items: center;
+}
+.unit-text__icon {
+	width: 85px;
+	display: flex;
+	flex: none;
+	align-items: center;
+	justify-content: center;
+}
+.unit-text__icon img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.unit-text p {
+	font-size: 16px;
+	line-height: 24px;
+	padding: 0;
+}
+.row_unit-text > div {
+	margin-top: 50px;
+}
+.item-reservation {
+	padding: 35px;
+	min-height: 100%;
+	padding-top: 0;
+	position: relative;
+	background-color: #fff;
+	text-align: center;
+}
+.item-reservation p {
+	font-size: 16px;
+	padding: 0;
+}
+.item-reservation p a {
+	font-weight: 500;
+	color: #000;
+	border-bottom: 1px solid #555;
+	transition: all 0.3s;
+}
+.item-reservation p a:hover {
+	border-color:transparent;
+}
+.item-reservation__icon {
+	height: 85px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.item-reservation__icon img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.item-reservation__number {
+	font-size: 162px;
+    line-height: 79px;
+	color: #fff;
+	font-family: 'NewBaskervilleC';
+	font-weight: 700;
+	bottom: 100%;
+	left: 0;
+	position: absolute;
+}
+.row_reservation > div {
+	margin-top: 140px;
+	padding: 0 30px;
+}
+.row_reservation {
+	margin: 0 -30px;
+}
+.reservation {
+	padding-bottom: 95px;
+}
+.discount .title-middle {
+	font-weight: 500;
+	padding-bottom: 7px;
+	font-family: 'GothamPro';
+}
+.item-discount__image img {
+	max-width: 100%;
+	border-radius: 13px;
+	height: auto;
+}
+.item-discount {
+	max-width: 314px;
+		margin-top: 40px;
+	margin-bottom: 45px;
+	position: relative;
+}
+.item-discount__value {
+    padding: 27px 30px;
+	right: -50px;
+	bottom: -45px;
+	background-color: #7b1212;
+	font-size: 36px;
+	position: absolute;
+	border-top-right-radius: 16px;
+	border-bottom-left-radius: 16px;
+	color: #fff;
+	font-weight: 700;
+	font-family: 'NewBaskervilleC';
+	position: absolute;
+}
+.row_discount {
+	margin: 0 -40px;
+}
+.row_discount > div {
+	padding: 0 40px;
+}
+.descr-discount p {
+	font-size: 16px;
+	padding-top: 0;
+}
+.descr-discount {
+	padding-top: 30px;
+} 
+.descr-discount strong {
+	font-weight: 500;
+}
